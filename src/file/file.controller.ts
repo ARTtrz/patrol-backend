@@ -4,7 +4,7 @@ import { FileService } from './file.service';
 @Controller('file')
 export class FileController {
   constructor(private readonly fileService: FileService) {}
-  @Post()
+  @Post('/')
   async createPost(@Req() req, @Res() res) {
     try {
       await this.fileService.fileupload(req, res);
