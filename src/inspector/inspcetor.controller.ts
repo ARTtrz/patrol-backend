@@ -5,7 +5,7 @@ import { InspectorService } from './inspector.service';
 export class InspectorController {
   constructor(private readonly inspectorService: InspectorService) {}
 
-  @Post('/')
+  @Post()
   async get_response(@Body('input') input: string) {
     return await this.inspectorService.generateResponse(input);
   }
