@@ -8,8 +8,7 @@ import { OpenAIEmbeddings } from 'langchain/embeddings/openai';
 import { DynamicTool } from "langchain/tools";
 import * as dotenv from 'dotenv';
 import { Readable } from 'stream';
-import { PineconeStore } from 'langchain/vectorstores';
-
+import { PineconeStore } from 'langchain/vectorstores/pinecone';
 dotenv.config();
 
 
